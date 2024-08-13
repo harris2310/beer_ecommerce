@@ -6,6 +6,7 @@ import { eq, isNotNull } from "drizzle-orm";
 import { redirect } from "next/navigation";
 import db from "../db/connection";
 import { userTable } from "../db/schema";
+import { validateRequest } from "../auth/validateRequest";
 
 // app/login/page.tsx
 export default async function Page() {
